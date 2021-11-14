@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+$Purple: #6554C0;
+
     * {
         margin: 0;
         padding: 0;
@@ -12,6 +14,7 @@ export default createGlobalStyle`
         background: #F9F9F9;
         -webkit-font-smoothing: antialiased;
         padding: 30px 35px;
+        position: relative;
     }
 
     body, input, button {

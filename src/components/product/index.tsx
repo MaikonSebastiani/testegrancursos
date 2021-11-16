@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faShoppingCart, faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
@@ -6,7 +6,11 @@ import { faShoppingCart, faShoppingBasket } from '@fortawesome/free-solid-svg-ic
 import { Container, Img } from './styles';
 import productImage from '../../assets/images/product.png';
 
-const Product: React.FC = () => {
+interface ProductProps extends InputHTMLAttributes<HTMLDivElement> {
+  title: string
+}
+
+const Product: React.FC<ProductProps> = ({ title }) => {
   const t = '';
 
   return (
@@ -15,7 +19,7 @@ const Product: React.FC = () => {
         <Img backgroundImage={productImage} />
 
         <div className="describe">
-          <p className="title">Apple Watch Series 4 GPS</p>
+          <p className="title">{title}</p>
           <p className="by">
             By
             {' '}
@@ -45,7 +49,7 @@ const Product: React.FC = () => {
           Free Shipping
         </span>
 
-        <button type="button" className="whish">
+        <button type="button" className="wish">
           <FontAwesomeIcon icon={faHeart} />
           WISHLIST
         </button>

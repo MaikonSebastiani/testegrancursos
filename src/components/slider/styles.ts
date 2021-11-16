@@ -35,7 +35,7 @@ position: relative;
 }
 
 .slider__range {
-  background-color: #9fe5e1;
+  background-color: #0052cc;
   z-index: 2;
 }
 

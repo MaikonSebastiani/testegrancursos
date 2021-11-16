@@ -65,6 +65,26 @@ const Filters: React.FC = () => {
               <label htmlFor="Cell Phones">Cell Phones</label>
               <span className="results">1920</span>
             </div>
+            <div className="customcheck">
+              <input id="Computers & Tablets" type="checkbox" name="Computers & Tablets" />
+              <label htmlFor="Computers & Tablets">Computers & Tablets</label>
+              <span className="results">1820</span>
+            </div>
+            <div className="customcheck">
+              <input id="Cell Phone Accessories" type="checkbox" name="Cell Phone Accessories" />
+              <label htmlFor="Cell Phone Accessories">Cell Phone Accessories</label>
+              <span className="results">462</span>
+            </div>
+            <div className="customcheck">
+              <input id="Appliances" type="checkbox" name="Appliances" />
+              <label htmlFor="Appliances">Appliances</label>
+              <span className="results">120</span>
+            </div>
+            <div className="customcheck">
+              <input id="CiPhone Cases" type="checkbox" name="iPhone Cases" />
+              <label htmlFor="iPhone Cases">iPhone Cases</label>
+              <span className="results">353</span>
+            </div>
           </CheckBox>
 
           <hr />
@@ -73,8 +93,24 @@ const Filters: React.FC = () => {
             <strong>Brand</strong>
 
             <div className="customcheck">
-              <input id="Cell Phones" type="checkbox" name="Cell Phones" />
-              <label htmlFor="Cell Phones">Cell Phones</label>
+              <input id="Insigni" type="checkbox" name="Insigni" />
+              <label htmlFor="Insigni">Insigni</label>
+            </div>
+            <div className="customcheck">
+              <input id="Samsung" type="checkbox" name="Samsung" />
+              <label htmlFor="Samsung">Samsung</label>
+            </div>
+            <div className="customcheck">
+              <input id="Apple" type="checkbox" name="Apple" />
+              <label htmlFor="Apple">Apple</label>
+            </div>
+            <div className="customcheck">
+              <input id="HP" type="checkbox" name="HP" />
+              <label htmlFor="HP">HP</label>
+            </div>
+            <div className="customcheck">
+              <input id="Sony" type="checkbox" name="Sony" />
+              <label htmlFor="Sony">Sony</label>
             </div>
           </CheckBox>
 
@@ -138,7 +174,9 @@ const Filters: React.FC = () => {
           <FontAwesomeIcon icon={faSearch} />
         </SearchBar>
 
-        <Product />
+        <Product title="Apple Watch Series 4 GPS" />
+        <Product title="JBL Speaker" />
+        <Product title="Apple iPhone X 128GB" />
       </div>
     </Container>
   );

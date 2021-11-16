@@ -28,6 +28,7 @@ export const Container = styled.div`
                 display: block;
                 padding-left: 0;
                 margin-top: 5px;
+                font-size: 13px;
             }
     
             svg {
@@ -45,7 +46,11 @@ export const Container = styled.div`
         text-align: right;
         vertical-align: middle;
         svg {
-            font-size: 25px;
+            font-size: 35px;
+            color: #fff;
+            background: #6554c0;
+            border-radius: 50%;
+            padding: 8px;
         }
         .textSettings {
             display: none;

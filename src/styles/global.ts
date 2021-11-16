@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-$Purple: #6554C0;
-
     * {
         margin: 0;
         padding: 0;
@@ -11,7 +9,7 @@ $Purple: #6554C0;
     }
 
     body {
-        background: #F9F9F9;
+        background: #FAFBFC;
         -webkit-font-smoothing: antialiased;
         padding: 30px 35px;
         position: relative;
@@ -43,13 +41,10 @@ $Purple: #6554C0;
     .customcheck {
         position: relative;
         label {
+            cursor: pointer;
             display: inline-block;
             margin-bottom: 15px;
             padding-left: 10px;
-    
-            &::before {
-                
-            }
     
         }
 
@@ -73,13 +68,14 @@ $Purple: #6554C0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             &::before {
                 content: "";
                 width: 9px;
                 height: 9px;
                 transform: scale(0);
                 transition: 120ms transform ease-in-out;
-                box-shadow: inset 1em 1em red;
+                box-shadow: inset 1em 1em #0052cc;
                 border-radius: 50%;
             }
             &:checked::before {
@@ -101,15 +97,16 @@ $Purple: #6554C0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             &::before {
                 content: "";
                 width: 9px;
                 height: 9px;
                 transform: scale(0);
                 transition: 120ms transform ease-in-out;
-                box-shadow: inset 1em 1em red;
+                box-shadow: inset 1em 1em #0052cc;
                 transform-origin: bottom left;
-            clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
             }
             &:checked::before {
                 transform: scale(1);

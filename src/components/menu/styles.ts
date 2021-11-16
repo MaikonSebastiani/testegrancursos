@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     background: #fff;
     width: 280px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     z-index: 100;
     padding: 30px 25px;
@@ -28,7 +28,7 @@ export const Container = styled.div`
                 color: #606060;
             }
             .dashboard {
-                background: #ECECEC;
+                background: #091e42;
                 border-radius: 4px;
                 padding: 10px;
                 font-size: 15px;
@@ -39,10 +39,14 @@ export const Container = styled.div`
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    color: #fff;
+                }
+                svg {
+                    color: #fff;
                 }
             }
             .ecommerce {
-                font-size: 15px;
+                font-size: 12px;
                 padding: 10px;
             }
         }
@@ -80,22 +84,32 @@ export const Container = styled.div`
 
     &.active{
         transform: translate3d(0, 0, 0);
+        @media screen and (max-width: 499px){
+            overflow: scroll;
+        }
     }
 
     .controlMenu {
     position: absolute;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 8px;
     width: 45px;
     height: 45px;
-    background: #6554C0;
-    right: -45px;
+    background: #091e42;
+    right: -35px;
     bottom: 50%;
     font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    cursor: pointer;
+    @media screen and (max-width: 499px){
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        right: -26px;
+    }
     svg {
         color: #fff;
     }

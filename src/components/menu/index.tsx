@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faHome, faChevronDown, faChevronRight, faAngleDoubleRight,
+  faHome, faChevronDown, faChevronRight, faAngleDoubleRight, faTint, faBorderAll, faWindowRestore,
 } from '@fortawesome/free-solid-svg-icons';
 import {
-  faCircle, faEnvelope, faCommentAlt, faTimesCircle,
+  faCircle, faEnvelope, faCommentAlt, faTimesCircle, faCheckSquare, faCalendar, faAddressCard, faFolderOpen, faCheckCircle, faFileAlt, faClone, faWindowMaximize,
 } from '@fortawesome/free-regular-svg-icons';
 
 import { Container } from './styles';
@@ -55,11 +55,11 @@ const Menu: React.FC = () => {
             <p>Chat</p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faCheckSquare} />
             <p>Todo</p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faCalendar} />
             <p>Calendar</p>
           </li>
         </ul>
@@ -70,34 +70,31 @@ const Menu: React.FC = () => {
         <strong>UI ELEMENTS</strong>
         <ul>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faWindowRestore} />
             <p>
               Grid
-              {' '}
               <FontAwesomeIcon icon={faChevronRight} />
             </p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faTint} />
             <p>Colors</p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faAddressCard} />
             <p>
               Card
-              {' '}
               <FontAwesomeIcon icon={faChevronRight} />
             </p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faBorderAll} />
             <p>Table</p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faFolderOpen} />
             <p>
               Components
-              {' '}
               <FontAwesomeIcon icon={faChevronRight} />
             </p>
           </li>
@@ -108,23 +105,22 @@ const Menu: React.FC = () => {
         <strong>FORMS</strong>
         <ul>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faClone} />
             <p>
               Form Elements
-              {' '}
               <FontAwesomeIcon icon={faChevronRight} />
             </p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faWindowMaximize} />
             <p>Form Layouts</p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faFileAlt} />
             <p>Form Wizard</p>
           </li>
           <li>
-            <FontAwesomeIcon icon={faCommentAlt} />
+            <FontAwesomeIcon icon={faCheckCircle} />
             <p>Form Validation</p>
           </li>
         </ul>

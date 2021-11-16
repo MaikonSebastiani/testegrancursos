@@ -12,9 +12,13 @@ export const Container = styled.div`
 
     .productContent {
         width: 80%;
-        border-right: solid 1px #DADADA;
         padding: 20px 0;
         display: inline-flex;
+        @media screen and (max-width: 659px){
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
         .describe {
             display: inline-block;
             padding-left: 15px;
@@ -31,6 +35,7 @@ export const Container = styled.div`
             .description {
                 font-size: 14px;
                 margin-top: 25px;
+                padding-right: 10px;
             }
         }
     }
@@ -40,6 +45,16 @@ export const Container = styled.div`
         display: inline-block;
         text-align: center;
         vertical-align: top;
+        border-left: solid 1px #DADADA;
+        min-height: 250px;
+
+        @media screen and (max-width: 659px){
+            display: block;
+            width: 100%;
+            border-left: 0;
+            border-top: solid 1px #DADADA;
+            min-height: auto;
+        }
 
         .ranking {
             display: block;
@@ -47,7 +62,7 @@ export const Container = styled.div`
             p {
                 padding: 5px 10px;
                 border-radius: 3px;
-                background: #7E7E7E;
+                background: #FFAB00;
                 color: #fff;
                 font-size: 14px;
             }
@@ -62,23 +77,24 @@ export const Container = styled.div`
             margin-top: 5px;
             margin-bottom: 10px;
         }
-        .whish, .add {
+        .wish, .add {
             width: 100%;
             margin-top: 15px;
             padding: 10px;
             text-align: center;
-            font-size: 14px;
+            font-size: 13px;
             border-radius: 8px;
             border: none;
             svg {
                 margin-right: 5px;
             }
         }
-        .width {
-            background: #999999;
+        .wish {
+            background: #f54d54;
+            color: #fff;
         }
         .add {
-            background: #7E7E7E;
+            background: #36B37E;
             color: #fff;
         }
     }

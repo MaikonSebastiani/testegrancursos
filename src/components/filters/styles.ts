@@ -10,6 +10,7 @@ export const Container = styled.div`
         vertical-align: top;
         @media screen and (max-width: 949px){
             width: 100%;
+            padding: 0;
         }
     }
     .rightSide {
@@ -20,11 +21,16 @@ export const Container = styled.div`
         @media screen and (max-width: 949px){
             width: 100%;
             margin-top: 25px;
+            padding: 0;
         }
 
         p {
             display: inline-block;
             vertical-align: middle;
+            @media screen and (max-width: 499px){
+                display: block;
+                text-align: center;
+            }
         }
     }
 `;
@@ -46,6 +52,7 @@ export const FiltersTools = styled.div`
             margin-top: 15px;
             svg {
                 margin-left: 5px;
+                color: #FFAB00;
             }
             .up {
                 margin-left: 5px;
@@ -92,7 +99,7 @@ export const Button = styled.button`
     border-radius: 8px;
     border: none;
     margin-top: 25px;
-    background: #888;
+    background: #6554C0;
     color: #fff;
 `;
 
@@ -104,6 +111,13 @@ export const ControlView = styled.div`
     margin-top: -18px;
     @media screen and (max-width: 949px){
         margin-top: -10px;
+    }
+    @media screen and (max-width: 499px){
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 25px;
     }
     select {
         padding: 10px;
